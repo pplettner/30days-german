@@ -1,18 +1,18 @@
-# Deploying your Streamlit app with Streamlit Community Cloud
+# Bereitstellen deiner Streamlit App mit Streamlit Community Cloud
 
 ## Streamlit Community Cloud
 
-[Streamlit Community Cloud](https://streamlit.io/cloud) is a hosting service for easily deploying Streamlit apps.
+[Streamlit Community Cloud](https://streamlit.io/cloud) ist ein Hosting-Service, mit dem man mühelos Streamlit Apps bereitstellen kann.
 
-## Sign up for Streamlit Community Cloud
+## Bei Streamlit Community Cloud registrieren
 
-You can easily sign up for [Streamlit Community Cloud](https://streamlit.io/cloud) by simply logging in with Google or GitHub account.
+Du kannst dich ganz einfach für die [Streamlit Community Cloud](https://streamlit.io/cloud) anmelden, man muss nur mit deinem Google- oder GitHub-Konto einloggen.
 
-## Deploy a Streamlit app
+## Streamlit App bereitstellen
 
-To deploy a Streamlit app, do the following:
-1. Sign in with GitHub or Gmail credentials
-2. Pick a repo, branch and file
-3. Click Deploy
+Um eine Streamlit App bereitzustellen, mach folgendes:
+1. Mit deinen GitHub oder Gmail Anmeldeinformationen einloggen
+2. Wähle ein Repo, ein Branch und eine Datei
+3. Klicke auf "**Deploy**"
 
-Then any time you do a git push your app will update immediately.
+Wenn du dann einen Git-Push durchführst, wird deine App sofort aktualisiert.
