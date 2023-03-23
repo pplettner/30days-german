@@ -41,7 +41,7 @@ für Tipps und Tricks und die neusten Informationen rund um Streamlit
 
 Du möchtest uns dabei helfen, die Reichweite von `#30DaysOfStreamlit` zu erhöhen und Englisch ist nicht deine Muttersprache? Übersetze die Aufgaben in deine bervorzugte Sprache und verlinke sie unten!
 
-- [Englisch](https://github.com/streamlit/30days) (Offiziel): [![30 Days of Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days.streamlit.app)
+- [Englisch](https://github.com/streamlit/30days) (Offiziell): [![30 Days of Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days.streamlit.app)
 - [Chinesisch](https://github.com/TeddyHuang-00/30days-Chinese) (von [TeddyHuang-00](https://github.com/TeddyHuang-00)): [![30 天学 Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-chinese.streamlit.app)
 - [Spanisch](https://github.com/streamlit/30days-spanish/) (von [Emiliano Rosso](https://github.com/arraydude)): [![30 Días de Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-in-spanish.streamlit.app/)
 - [Französisch](https://github.com/streamlit/30days-French) (von [Charly Wargnier](https://github.com/charlyWargnier/)): [![30 Days of Streamlit en Français!](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://30days-in-french.streamlit.app/)
