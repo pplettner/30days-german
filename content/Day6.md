@@ -2,7 +2,7 @@
 
 ## GitHub
 
-Git ist eine Software, die zur Erfassung von Änderungen an Code verwendet wird (d.h. Versionskontrolle). GitHub ist ein Git Repository Hosting Dienst, der Daten und Code im Internet öffentlich zugänglich macht, was die Zusammenarbeit im Team ermöglicht und anderen erlaubt, zum Repository beizutragen.
+Git ist eine Software, die zur Erfassung von Änderungen an Code verwendet wird (d.h. Versionskontrolle). GitHub ist ein Git Repository Hosting-Service, der Daten und Code im Internet öffentlich zugänglich macht, was die Zusammenarbeit im Team ermöglicht und anderen erlaubt, zum Repository beizutragen.
 
 Wenn man eine Streamlit App in einem GitHub Repository hostet, kann man die App in der Cloud bereitstellen (die nächste Herausforderung).
 
@@ -28,7 +28,7 @@ Unten sieht man einen Screenshot des neu erstellten Repo (Figure 4):
 
 ## Daten hochladen auf dem GitHub Repo
 
-Oberhalb der Dateitabelle, neben dem grünen Knopf **Code**, klicke auf **Add files** > **Upload files** (Figure 5).
+Oberhalb der Dateitabelle, neben der grünen Schaltfläche **Code**, klicke auf **Add files** > **Upload files** (Figure 5).
 
 Dies bringt dir zu einer neuen Seite, auf der in der Mitte das Feld ***Drag files here to add them to your repository*** und **choose your files** steht. Man kann Dateien entweder per Drag & Drop in dieses Feld ziehen oder auf den Link **choose your files** klicken, um Dateien von deinem lokalen Computer auszuwählen.
 

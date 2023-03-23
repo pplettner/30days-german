@@ -123,7 +123,7 @@ appointment = st.slider(
      value=(time(11, 30), time(12, 45)))
 st.write("You're scheduled for:", appointment)
 ```
-Mit dem Zeitereich-Slider kann man ein unterer und ein oberer Grenzwert eines Zeitbereiches auswählen.
+Mit dem Zeitbereich-Slider kann man ein unterer und ein oberer Grenzwert eines Zeitbereiches auswählen.
 
 Das erste Argument zeigt den Text `'Schedule your appointment:'` direkt über dem **range time slider** Widget an.
 
