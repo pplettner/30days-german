@@ -55,11 +55,11 @@ chart_data = pd.DataFrame(
      columns=['a', 'b', 'c'])
 ```
 
-Zum Schluss wird ein Liniendiagramm mit `st.line_chart()` erstellt, wobei der in der Variablen `chart_data` gespeicherte Datenrahmen als Eingabedaten verwendet wird:
+Zum Schluss wird ein Liniendiagramm mit `st.line_chart()` erstellt, wobei der in der Variablen `chart_data` gespeicherte DataFrame als Eingabedaten verwendet wird:
 ```python
 st.line_chart(chart_data)
 ```
 
 ## Literaturhinweise
-Lies mehr über den folgenden verwandten Streamlit Befehl, auf dem [`st.line_chart`](https://docs.streamlit.io/library/api-reference/charts/st.line_chart) basiert:
+Lies mehr über den folgenden verwandten Streamlit Befehl, auf dem [`st.line_chart`](https://docs.streamlit.io/library/api-reference/charts/st.line_chart) basiert ist:
 - [`st.altair_chart`](https://docs.streamlit.io/library/api-reference/charts/st.altair_chart)
