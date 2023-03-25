@@ -109,7 +109,7 @@ Mit dem Bereich-Slider kann man ein unterer und ein oberer Grenzwert eines Zahle
 
 Das erste Argument zeigt den Text `'Select a range of values'` direkt über dem **range slider** Widget an.
 
-Die erste zwei Argumente `0,0, 100,0, (25,0, 75,0)` stehen für die Minimal- und Maximalwerte, während das letzte Tupel die Defaultwerte angibt, die als untere (25,0) und obere (75,0) Grenze verwendet werden sollen
+Die erste zwei Argumente `0.0, 100.0` stehen für die Minimal- und Maximalwerte, während das letzte Tupel die Defaultwerte angibt, die als untere (`25.0`) und obere (`75.0`) Grenze verwendet werden sollen
 
 **Beispiel 3**
 
