@@ -1,15 +1,14 @@
 # How to use API by building the Bored API app
 
-The Bored API app suggests fun things for you to do when you are bored!
+Die Bored API-App schlägt dir lustige Dinge vor, wenn dir langweilig ist!
 
-Technically, it also demonstrates the usage of APIs from within a Streamlit app.
-
+Eigentlich demonstriert es auch die Verwendung von APIs innerhalb einer Streamlit-App.
 ## Demo app
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/bored-api-app/)
 
 ## Code
-Here's how to implement the Bored-API app:
+So wird eine Bored-API App erstellt:
 ```python
 import streamlit as st
 import requests
@@ -43,32 +42,32 @@ with col3:
   st.metric(label='Price', value=suggested_activity['price'], delta='')
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` and the `requests` library like so:
+## Zeilenweise Erklärung
+Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 import requests
 ```
 
-The app's title is displayed via `st.title`:
+Der Titel der App wird mit `st.title` angezeigt:
 ```python
 st.title('🏀 Bored API app')
 ```
 
-Next, we'll accept user input on the **activity type** by means of the `st.selectbox` command:
+Als nächstes wird Benutzereingaben zur **activity type** mithilfe des Befehls `st.selectbox` angenommen:
 ```python
 st.sidebar.header('Input')
 selected_type = st.sidebar.selectbox('Select an activity type', ["education", "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"])
 ```
 
-The selected activity mentioned above is then appended to the URL via an f-string, which is then used to retrieve the resulting JSON data: 
+Die oben genannte ausgewählte Aktivität wird dann mit einem f-String an die URL angehängt, die dann zum Abrufen der resultierenden JSON-Daten verwendet wird:
 ```python
 suggested_activity_url = f'http://www.boredapi.com/api/activity?type={selected_type}'
 json_data = requests.get(suggested_activity_url)
 suggested_activity = json_data.json()
 ```
 
-Here, we'll display information about the app and the JSON data via the `st.expander` command.
+Hier werden wir Informationen über die App und die JSON-Daten mit dem Befehl `st.expander` anzeigen:
 ```python
 c1, c2 = st.columns(2)
 with c1:
@@ -79,13 +78,13 @@ with c2:
     st.write(suggested_activity)
 ```
 
-We'll then display a suggested activity like so:
+Wir werden dann eine vorgeschlagene Aktivität anzeigen:
 ```python
 st.header('Suggested activity')
 st.info(suggested_activity['activity'])
 ```
 
-Finally, we'll also display the accompanying information of the suggested activity such as the `Number of Participants`, `Type of Activity` and `Price`.
+Zuletzt zeigen wir auch die begleitenden Informationen zu der vorgeschlagenen Aktivität an, wie z.B. die Anzahl der Teilnehmer, die Art der Aktivität und den Preis.
 ```python
 col1, col2, col3 = st.columns(3)
 with col1:
@@ -96,5 +95,5 @@ with col3:
   st.metric(label='Price', value=suggested_activity['price'], delta='')
 ```
 
-## Further reading
+## Literaturhinweise
 - [Bored API](http://www.boredapi.com/)
