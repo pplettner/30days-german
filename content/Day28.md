@@ -1,24 +1,23 @@
 # streamlit-shap
 
-[`streamlit-shap`](https://github.com/snehankekre/streamlit-shap) is a Streamlit component that provides a wrapper to display [SHAP](https://github.com/slundberg/shap) plots in [Streamlit](https://streamlit.io/). 
+[`streamlit-shap`](https://github.com/snehankekre/streamlit-shap) ist eine Streamlit-Komponente, die einen Wrapper zur Anzeige von [SHAP](https://github.com/slundberg/shap) Plots in [Streamlit](https://streamlit.io/) bereitstellt.
 
-The library is developed by our in-house staff [Snehan Kekre](https://github.com/snehankekre) who also maintains the [Streamlit Documentation](https://docs.streamlit.io/) website.
+Die Bibliothek wird von unserem internen Mitarbeiter [Snehan Kekre](https://github.com/snehankekre) entwickelt, der auch die Website [Streamlit Documentation](https://docs.streamlit.io/) pflegt.
 
-Firstly, install Streamlit (of course!) then pip install the `streamlit-shap` library:
+Zuerst muss man Streamlit installieren (natürlich!) und dann die Bibliothek `streamlit-shap` mit Pip:
 ```bash
 pip install streamlit
 pip install streamlit-shap
 ```
 
-There are also other prerequisite libraries to install (e.g. `matplotlib`, `pandas`, `scikit-learn` and `xgboost`) if you haven't yet done so.
-
+Es gibt noch weitere Bibliotheken zu installieren (z.B. `matplotlib`, `pandas`, `scikit-learn` und `xgboost`), falls du dies noch nicht getan hast.
 
 ## Demo app
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-shap/)
 
 ## Code
-Here's how to use `streamlit-shap`:
+So wird `streamlit-shap` verwendet:
 ```python
 import streamlit as st
 from streamlit_shap import st_shap
@@ -92,8 +91,8 @@ with st.expander('Force plot'):
     st_shap(shap.force_plot(explainer.expected_value, shap_values[:1000,:], X_display.iloc[:1000,:]), height=400, width=1000)
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## Zeilenweise Erklärung
+Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 from streamlit_shap import st_shap
@@ -104,19 +103,19 @@ import numpy as np
 import pandas as pd
 ```
 
-Next, we'll set the page layout to be wide such that contents in the Streamlit app can spread the full page width.
+Als nächstes stellen wir das Seitenlayout so ein, dass die Inhalte der Streamlit-App die gesamte Seitenbreite einnehmen können.
 ```python
 st.set_page_config(layout="wide")
 ```
 
-Then, we'll load in a dataset from the `shap` library:
+Dann laden wir einen Datensatz aus der Bibliothek `shap`:
 ```python
 @st.experimental_memo
 def load_data():
     return shap.datasets.adult()
 ```
 
-Subsequently, we'll definite a function called `load_model` for taking in the `X, y` matrix pair as input, perform data splitting to train/test sets, constructing a `DMatrix` and build an XGBoost model.
+Anschließend wird eine Funktion namens `load_model` definiert, die das Matrixpaar `X, y` als Eingabe annimmt, die Daten in Trainings-/ Testsätze aufteilt, eine `DMatrix` erstellt und ein XGBoost-Modell erstellt.
 ```python
 @st.experimental_memo
 def load_model(X, y):
@@ -135,12 +134,13 @@ def load_model(X, y):
     return model
 ```
 
-The title of the Streamlit app is then displayed:
+Dann wird der Titel der Streamlit-App angezeigt:
 ```python
 st.title("`streamlit-shap` for displaying SHAP plots in a Streamlit app")
 ```
 
 An about expander box is implemented to provide details of the app:
+Eine [[About Expanderfeld?]] ist implementiert, um Details über die App bereitzustellen:
 ```python
 with st.expander('About the app'):
     st.markdown('''[`streamlit-shap`](https://github.com/snehankekre/streamlit-shap) is a Streamlit component that provides a wrapper to display [SHAP](https://github.com/slundberg/shap) plots in [Streamlit](https://streamlit.io/). 
@@ -148,7 +148,7 @@ with st.expander('About the app'):
                 ''')
 ```
 
-Here, we'll display the header text along with expander box of the `X` and `y` variables of the Input data:
+Hier wird die Überschrift zusammen mit einem [[Expanderfeld]] für die Eingabevariablen "X" und "y" angezeigt:
 ```python
 st.header('Input data')
 X,y = load_data()
@@ -162,12 +162,13 @@ with st.expander('y'):
     st.dataframe(y)
 ```
 
-Here, we'll display the header text for the forthcoming SHAP output:
+Hier wird die Überschrift für die anstehende SHAP-Ausgabe angezeigt:
 ```python
 st.header('SHAP output')
 ```
 
-The XGBoost model is then built by using the `load_model` function that was just implemented above. Finally, 
+Das XGBoost-Modell wird dann mithilfe der Funktion "load_model" erstellt, die oben implementiert wurde.
+
 ```python
 # train XGBoost model
 X,y = load_data()
@@ -176,7 +177,7 @@ X_display,y_display = shap.datasets.adult(display=True)
 model = load_model(X, y)
 ```
 
-Here, we'll compute the SHAP values, which are then used to create the Waterfall and Beeswarm plots.
+Hier werden die SHAP-Werte berechnet, die dann zur Erstellung der Wasserfall- und Beeswarm-Diagramme verwendet werden.
 ```python
 # compute SHAP values
 explainer = shap.Explainer(model, X)
@@ -188,7 +189,7 @@ with st.expander('Beeswarm plot'):
     st_shap(shap.plots.beeswarm(shap_values), height=300)
 ```
 
-Finally, the Tree SHAP algorithms is used to explain the output of ensemble tree models via the `shap.TreeExplainer` command and visualized via the `shap.force_plot` command:
+Zum Schluss wird der Tree-SHAP-Algorithmus verwendet, um die Ergebnisse von Ensemble-Baummodellen mit dem Befehl `shap.TreeExplainer` zu erklären und mit dem Befehl `shap.force_plot` zu visualisieren:
 ```python
 explainer = shap.TreeExplainer(model)
 shap_values = explainer.shap_values(X)
@@ -200,6 +201,6 @@ with st.expander('Force plot'):
     st_shap(shap.force_plot(explainer.expected_value, shap_values[:1000,:], X_display.iloc[:1000,:]), height=400, width=1000)
 ```
 
-## Further reading
+## Literaturhinweise
 - [`streamlit-shap`](https://github.com/snehankekre/streamlit-shap)
 - [SHAP](https://github.com/slundberg/shap)

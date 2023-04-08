@@ -1,41 +1,41 @@
-# Build a draggable and resizable dashboard with Streamlit Elements
+# [[Erstellung eines dragfähigen und größenveränderbaren Dashboard mit Streamlit Elements]]
 
-Streamlit Elements is a third-party component made by [okld](https://github.com/okld) that gives you the tools to compose beautiful applications and dashboards with Material UI widgets, Monaco editor (Visual Studio Code), Nivo charts, and more.
+Streamlit Elements ist eine Komponente eines Drittanbieters, die von [okld] (https://github.com/okld) entwickelt wurde und dir die Möglichkeit bietet, schöne Apps und Dashboards mit Material UI-Widgets, Monaco-Editor (Visual Studio Code), Nivo-Diagrammen und vielem mehr zu erstellen.
 
-## How to use?
+## Wie wird es verwendet?
 
 ### Installation
 
-The first step is to install Streamlit Elements in your environment:
+Der erste Schritt besteht darin, Streamlit Elements in Ihrer Umgebung zu installieren:
 
 ```bash
 pip install streamlit-elements==0.1.*
 ```
 
-It is recommended to pin the version to `0.1.*`, as future versions might introduce breaking API changes.
+Es wird empfohlen, die Version auf `0.1.*` festzulegen, da zukünftige Versionen möglicherweise brechende API-Änderungen einführen.
 
-### Usage
+### Verwendung
 
-You can refer to [Streamlit Elements README](https://github.com/okld/streamlit-elements#getting-started) for an in-depth usage guide.
+Eine ausführliche Anleitung zur Verwendung findet man in [Streamlit Elements README](https://github.com/okld/streamlit-elements#getting-started).
 
-## What are we building?
+## Was bauen wir?
 
-The goal of today's challenge is to create a dashboard composed of three Material UI cards:
+Das Ziel der heutigen Herausforderung ist es, ein Dashboard zu erstellen, das aus drei Material UI-Karten besteht:
 
-- A first card with a Monaco code editor to input some data ;
-- A second card to display that data in a Nivo Bump chart ;
-- A third card to show a YouTube video URL defined with a `st.text_input`.
+- Eine erste Karte mit einem Monaco-Code-Editor zur Dateneingabe;
+- Eine zweite Karte, die diese Daten in einem Nivo Bump-Diagramm anzeigt;
+- Eine dritte Karte, um eine YouTube-Video-URL anzuzeigen, die mit `st.text_input` definiert wurde.
 
-You can use data generated from Nivo Bump demo there, in 'data' tab: https://nivo.rocks/bump/.
+Man kann die von der Nivo Bump-Demo generierten Daten auf dem "Daten"-Tab verwenden: https://nivo.rocks/bump/.
 
 ## Demo app
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/okld/streamlit-elements-demo/main)
 
-## Code with line-by-line explanation
+## Code mit zeilenweise Erklärung
 
 ```python
-# First, we will need the following imports for our application.
+# Zuerst brauchen wir die folgenden Importe für unsere App.
 
 import json
 import streamlit as st
@@ -264,6 +264,6 @@ with elements("demo"):
 
 ```
 
-## Any question?
+## Weitere Fragen?
 
-Feel free to ask any question regarding Streamlit Elements or this challenge there: [Streamlit Elements Topic](https://discuss.streamlit.io/t/streamlit-elements-build-draggable-and-resizable-dashboards-with-material-ui-nivo-charts-and-more/24616)
+Man kann alle Fragen zu Streamlit Elements oder zu dieser Herausforderung dort stellen: [Streamlit Elements Thema](https://discuss.streamlit.io/t/streamlit-elements-build-draggable-and-resizable-dashboards-with-material-ui-nivo-charts-and-more/24616)
