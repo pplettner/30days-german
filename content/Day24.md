@@ -124,7 +124,7 @@ b1 = time()
 st.info(b1-b0)
 ```
 
-Es ist zu bemerken, dass der erste Durchlauf in etwa die gleiche Laufzeit ergibt. Lade die App neu und beobachte, wie sich die Laufzeit bei Verwendung des Dekorators "st.cache" ändert. Konnten Sie einen Geschwindigkeitszuwachs feststellen?
+Es ist zu bemerken, dass der erste Durchlauf in etwa die gleiche Laufzeit ergibt. Lade die App neu und beobachte, wie sich die Laufzeit bei Verwendung des Dekorators "st.cache" ändert. Konntest du einen Geschwindigkeitszuwachs feststellen?
 
 ## Literaturhinweise
 - [`st.cache` API Documentation](https://docs.streamlit.io/library/api-reference/performance/st.cache)

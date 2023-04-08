@@ -1,19 +1,19 @@
 # st.session_state
 
-We define access to a Streamlit app in a browser tab as a session. For each browser tab that connects to the Streamlit server, a new session is created. Streamlit reruns your script from top to bottom every time you interact with your app. Each reruns takes place in a blank slate: no variables are shared between runs.
+Wir definieren den Zugriff auf eine Streamlit-App in einer Browser-Tab als eine Session (Sitzung). Für jede Browser-Tab, die sich mit dem Streamlit-Server verbindet, wird eine neue Sitzung erstellt. Streamlit führt dein Skript von vorne bis hinten aus jedes Mal, wenn du mit deiner App interagierst. Jede Wiederholung findet in einer leeren Umgebung statt: Es werden keine gemeinsamen Variablen zwischen den Durchläufen benutzt.
 
-Session State is a way to share variables between reruns, for each user session. In addition to the ability to store and persist state, Streamlit also exposes the ability to manipulate state using Callbacks.
+Der Session-State ([[Sitzungsstatus/Sitzungszustand]]) ist eine Möglichkeit, Variablen zwischen den Wiederholungen der einzelnen Benutzersitzungen gemeinsam zu nutzen. Neben der Möglichkeit, den Zustand zu speichern und beizubehalten, bietet Streamlit auch die Möglichkeit, den Zustand mithilfe von Callbacks zu manipulieren.
 
-In this tutorial, we will illustrate the usage of Session State and Callbacks as we build a weight conversion app.
+In diesem Tutorial werden wir die Verwendung von Session-State und Callbacks zeigen, während wir eine App zur Gewichtsumwandlung erstellen.
 
-`st.session_state` allows the implementation of session state in a Streamlit app.
+`st.session_state` ermöglicht die Implementierung des Sessionsstatus in einer Streamlit-App.
 
 ## Demo app
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.session_state/)
 
 ## Code
-Here's how to use `st.session_state`:
+So wird `st.session_state` verwendet:
 ```python
 import streamlit as st
 
@@ -35,18 +35,18 @@ st.header('Output')
 st.write("st.session_state object:", st.session_state)
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## Zeilenweise Erklärung
+Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 ```
 
-Firstly, we'll start by creating the title of the app:
+Dies wird gefolgt von dem Erstellen eines Titels für die App:
 ```python
 st.title('st.session_state')
 ```
 
-Next, we define custom functions for the weight conversion from lbs to kg and vice versa:
+Als nächstes definieren wir Funktionen für die Gewichtsumrechnung von Pfund in Kilo und umgekehrt:
 ```python
 def lbs_to_kg():
   st.session_state.kg = st.session_state.lbs/2.2046
@@ -54,7 +54,7 @@ def kg_to_lbs():
   st.session_state.lbs = st.session_state.kg*2.2046
 ```
 
-Here, we use `st.number_input` to accept numerical inputs of the weight values:
+Hier verwenden wir `st.number_input`, um numerische Eingaben für die Gewichtswerte zu annehmen:
 ```python
 st.header('Input')
 col1, spacer, col2 = st.columns([2,1,2])
@@ -68,11 +68,18 @@ The above 2 custom functions will be called upon as soon as a numerical value is
 In a nutshell, upon entering a number into the `st.number_input` box the number is converted by these custom functions.
 
 Finally, the weight values in `kg` and `lbs` units as stored in the session state as `st.session_state.kg` and `st.session_state.lbs` will be printed out via `st.write`:
+
+Die obigen 2 definierten Funktionen werden aufgerufen, sobald ein numerischer Wert in das Zahlenfeld eingegeben wird, das durch den Befehl `st.number_input` erstellt wurde. Es ist zu bemerken, dass die Option `on_change` die beiden Funktionen (`lbs_to_kg` und `kg_to_lbs`) festlegt. 
+
+Kurzgesagt, bei der Eingabe einer Zahl in das Feld `st.number_input` wird die Zahl durch diese Funktionen umgewandelt.
+
+Zuletzt werden die Gewichtswerte in den Einheiten `kg` und `lbs` mit `st.write` ausgedruckt, die im Session-State als `st.session_state.kg` und `st.session_state.lbs` gespeichert sind:
+
 ```python
 st.header('Output')
 st.write("st.session_state object:", st.session_state)
 ```
 
-## Further reading
+## Literaturhinweise
 - [Session State](https://docs.streamlit.io/library/api-reference/session-state)
 - [Add statefulness to apps](https://docs.streamlit.io/library/advanced-features/session-state)
