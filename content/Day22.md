@@ -74,7 +74,7 @@ Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bib
 import streamlit as st
 ```
 
-Dies wird gefolgt von dem Erstellen einer Überschrift für die App:
+Dies wird gefolgt von dem Erstellen eines Titels für die App:
 ```python
 st.title('st.form')
 ```

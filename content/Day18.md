@@ -36,7 +36,7 @@ import streamlit as st
 import pandas as pd
 ```
 
-Dies wird gefolgt von dem Erstellen einer Überschrift für die App:
+Dies wird gefolgt von dem Erstellen eines Titels für die App:
 ```python
 st.title('st.file_uploader')
 ```
