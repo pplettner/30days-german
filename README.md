@@ -31,7 +31,7 @@ Stelle die täglichen Aufgaben fertig, teile deine Lösung mit uns auf [Twitter]
 ## Materialien
 
 - Die offizielle [`#30DaysOfStreamlit` app](https://share.streamlit.io/streamlit/30days/), in welcher die täglichen Aufgaben veröffentlicht werden
-- Unsere [Twitter](https://twitter.com/streamlit) und [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) Wand für tägliche Updates
+- Unsere [Twitter](https://twitter.com/streamlit) und [LinkedIn](https://www.linkedin.com/company/streamlit/posts/?feedView=all) Feeds für tägliche Updates
 - Streamlit [Dokumentation](https://docs.streamlit.io/) und [Cheat Sheet](https://docs.streamlit.io/library/cheatsheet) für einen guten Überblick der Streamlitbefehle
 - Unsere fantastische [Gallerie](https://streamlit.io/gallery) für Inspiration, Vorlagen, und Communityapps
 - Unser [Blog](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/)
