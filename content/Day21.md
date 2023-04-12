@@ -1,13 +1,13 @@
 # st.progress
 
-`st.progress` displays a progress bar that updates graphically as the iteration progresses.
+`st.progress` zeigt einen Fortschrittsbalken an, der mit dem Fortschreiten der Iteration grafisch aktualisiert wird.
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.progress/)
 
 ## Code
-Here's how to use `st.progress`:
+So wird `st.progress` verwendet:
 ```python
 import streamlit as st
 import time
@@ -26,25 +26,26 @@ for percent_complete in range(100):
 st.balloons()
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` along with the `time` library like so:
+## Zeilenweise Erklärung
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 import time
 ```
 
-Next, we create a title text for the app:
+Dies wird gefolgt von dem Erstellen eines Titels für die App:
 ```python
 st.title('st.progress')
 ```
 
-An **About box** is created using `st.expander` and description is displayed via `st.write`:
+Ein **About box** (**Über-Schaltfläche**) wird mit `st.expander` erstellt und die Beschreibung wird mit `st.write` angezeigt:
 ```python
 with st.expander('About this app'):
      st.write('You can now display the progress of your calculations in a Streamlit app with the `st.progress` command.')
 ```
 
-Finally, we define a progress bar and instantiate it with a starting value of `0`. Then, a `for` loop will iterate from `0` until `100` is reached. In each iteration, we use `time.sleep(0.05)` to allow the app to wait for `0.05` before adding a value of `1` to the `my_bar` progress bar and in doing so the graphical display of the bar increases with each iteration.
+Zuletzt definieren wir einen Fortschrittsbalken und instanziieren ihn mit einem Startwert von `0`. Dann durchläuft eine `for`-Schleife die Werte `0` bis `100`. Bei jeder Iteration verwenden wir `time.sleep(0.05)`, damit die App `0.05`s warten kann, bevor der Fortschrittsbalken `my_bar` um `1` erhöht wird. Dabei wird die grafische Darstellung des Balkens mit jeder Iteration größer.
+
 ```python
 my_bar = st.progress(0)
 
@@ -55,5 +56,5 @@ for percent_complete in range(100):
 st.balloons()
 ```
 
-## Further reading
+## Literaturhinweise
 - [`st.progress`](https://docs.streamlit.io/library/api-reference/status/st.progress)

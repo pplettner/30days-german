@@ -66,7 +66,7 @@ st.write(c)
 
 Die allerste Sache
 
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` zu importieren:
 
 ```python
 import streamlit as st

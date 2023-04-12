@@ -1,19 +1,19 @@
 # st.experimental_get_query_params
 
-`st.experimental_get_query_params` allows the retrieval of query parameters directly from the URL of the user's browser.
+`st.experimental_get_query_params` ermöglicht den Abruf von Abfrageparametern (bzw. Query-Parametern) direkt aus der URL des Browsers des Nutzers.
 
-## Demo app
+## Demo App
 
-1. The following link loads the demo app with no query parameters (notice the error message):
+1. Der folgende Link lädt die Demo App ohne Query-Parametern (bitte die Fehlermeldung bemerken):
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.experimental_get_query_params/)
 
-2. The following link loads the demo app with query parameters (no error message here):
+2. Der folgende Link lädt die Demo App ohne Query-Parametern (hier keine Fehlermeldung):
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](http://share.streamlit.io/dataprofessor/st.experimental_get_query_params/?firstname=Jack&surname=Beanstalk)
 
 ## Code
-Here's how to use `st.experimental_get_query_params`:
+So wird `st.experimental_get_query_params` verwendet:
 ```python
 import streamlit as st
 
@@ -47,24 +47,24 @@ surname = st.experimental_get_query_params()['surname'][0]
 st.write(f'Hello **{firstname} {surname}**, how are you?')
 ```
 
-## Line-by-line explanation
-The very first thing to do when creating a Streamlit app is to start by importing the `streamlit` library as `st` like so:
+## Zeilenweise Erklärung
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 ```
 
-Next, we'll give the app a title:
+Dies wird gefolgt von dem Erstellen eines Titels für die App:
 ```python
 st.title('st.experimental_get_query_params')
 ```
 
-Let's also add an About drop-down box:
+Fügen wir auch ein "About" Dropdown-Feld hinzu:
 ```python
 with st.expander('About this app'):
   st.write("`st.experimental_get_query_params` allows the retrieval of query parameters directly from the URL of the user's browser.")
 ```
 
-Then, we'll provide instructions to visitors of the app on how they can pass query parameters directly to the URL:
+Dann geben wir den Besuchern der App Anweisungen, wie sie Query-Parameter direkt an die URL übergeben können:
 ```python
 # 1. Instructions
 st.header('1. Instructions')
@@ -77,14 +77,14 @@ such that it becomes
 ''')
 ```
 
-Subsequently, we'll display the contents of the `st.experimental_get_query_params` command.
+Anschließend zeigen wir den Inhalt des Befehls `st.experimental_get_query_params` an.
 ```python
 # 2. Contents of st.experimental_get_query_params
 st.header('2. Contents of st.experimental_get_query_params')
 st.write(st.experimental_get_query_params())
 ```
 
-Finally, we'll select and display selective information from the URL's query parameter:
+Zuletzt werden wir selektive Informationen aus dem Query-Parameter der URL auswählen und anzeigen:
 ```python
 # 3. Retrieving and displaying information from the URL
 st.header('3. Retrieving and displaying information from the URL')
@@ -95,5 +95,5 @@ surname = st.experimental_get_query_params()['surname'][0]
 st.write(f'Hello **{firstname} {surname}**, how are you?')
 ```
 
-## Further reading
+## Literaturhinweise
 - [`st.experimental_get_query_params`](https://docs.streamlit.io/library/api-reference/utilities/st.experimental_get_query_params)
