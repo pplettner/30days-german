@@ -1,4 +1,4 @@
-# Erstellung eines dragfähigen und größenveränderbaren Dashboard mit Streamlit Elements
+# Erstellung eines verschieb- und größenveränderbaren Dashboards mit Streamlit Elements
 
 Streamlit Elements ist eine Komponente eines Drittanbieters, die von [okld] (https://github.com/okld) entwickelt wurde und dir die Möglichkeit bietet, schöne Apps und Dashboards mit Material UI-Widgets, Monaco-Editor (Visual Studio Code), Nivo-Diagrammen und vielem mehr zu erstellen.
 
@@ -177,7 +177,7 @@ with elements("demo"):
                 # Wir brauchen also ein anderes, nicht-lazy Ereignis, um ein Update auszulösen.
                 #
                 # Die Lösung ist, einen Button zu erstellen, der beim Klick einen Callback auslöst.
-                # Unser Callback muss nicht was Besonderes tun. Du kannst entweder eine leere
+                # Unser Callback muss nichts Besonderes tun. Du kannst entweder eine leere
                 # Python-Funktion erstellen, oder sync() ohne Argument verwenden.
                 #
                 # Jetzt jedes Mal, wenn du auf den Button klickst, wird der onClick-Callback ausgelöst. Aber jeder andere

@@ -8,7 +8,7 @@ In diesem Tutorial werden wir unser neu erworbenes Wissen aus dieser Herausforde
 
 Als Content-Ersteller ist der Abruf von Vorschaubildern (Thumbnails) der YouTube-Videos eine nützliche Ressource für die soziale Werbung und die Erstellung von Content.
 
-Lass es uns herausfinden, wie wir dieses Problem angehen und eine Streamlit-App bauen können.
+Lass uns herausfinden, wie wir dieses Problem angehen und eine Streamlit-App bauen können.
 
 ## Lösung
 

@@ -1,6 +1,6 @@
 # Wie man ein Zero-Shot-Learning-Textklassifizierer mit Hugging Face und Streamlit baut
 
-In der heutigen Herausforderung wird [Charly Wargnier] (https://twitter.com/DataChaz) uns durch den Prozess der Entwicklung eines Zero-Shot-Learning-Textklassifizierers mit Hugging Face und Streamlit führen.
+In der heutigen Herausforderung wird [Charly Wargnier](https://twitter.com/DataChaz) uns durch den Prozess der Entwicklung eines Zero-Shot-Learning-Textklassifizierers mit Hugging Face und Streamlit führen.
 
 ## Introduction
 
