@@ -12,15 +12,15 @@ Heute freue ich mich, mit diesem interaktiven Tutorial einen Beitrag zur 30Dayso
 
 Wir werden ein Zero-Shot-Learning-Textklassifizierer der die API von Hugging Face und Distilbart verwendet!
 
-Du wirst die mächtige Kraft haben, [[Schlüsselsätze]] [[on-the-fly/spontan?]], schnell und ohne vorheriges ML-Training zu klassifizieren!
+Du wirst die mächtige Kraft haben, Schlüsselsätze on-the-fly, schnell und ohne vorheriges ML-Training zu klassifizieren!
 
-Erstelle Klassifizierungsetiketten, füge deine [[Schlüsselsätze]] ein, und los geht's!
+Erstelle Klassifizierungsetiketten, füge deine Schlüsselsätze ein, und los geht's!
 
 Man kann diese Etiketten beliebig festlegen, z.B.:
 
-- Positiv, Negativ und Neutral für die [[Stimmungsanalyse]]
+- Positiv, Negativ und Neutral für die Stimmungsanalyse
 - Wütend, Glücklich, Emotional für die Emotionsanalyse
-- [[Navigational, Transactional, Informational für die Klassifizierung von Absichten]]
+- Navigational, Transactional, Informational für die Klassifizierung von Absichten
 - Dein Produktsortiment (Taschen, Schuhe, Stiefel usw.)
 
 Du entscheidest!

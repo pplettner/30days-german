@@ -2,7 +2,7 @@
 
 Wir definieren den Zugriff auf eine Streamlit-App in einer Browser-Tab als eine Session (Sitzung). Für jeden Browser-Tab, die sich mit dem Streamlit-Server verbindet, wird eine neue Sitzung erstellt. Streamlit führt dein Skript von vorne bis hinten aus jedes Mal, wenn du mit deiner App interagierst. Jede Wiederholung findet in einer leeren Umgebung statt: Es werden keine gemeinsamen Variablen zwischen den Durchläufen benutzt.
 
-Der Session-State ([[Sitzungsstatus/Sitzungszustand]]) ist eine Möglichkeit, Variablen zwischen den Wiederholungen der einzelnen Benutzersitzungen gemeinsam zu nutzen. Neben der Möglichkeit, den Zustand zu speichern und beizubehalten, bietet Streamlit auch die Möglichkeit, den Zustand mithilfe von Callbacks zu manipulieren.
+Der Session-State (Sitzungszustand) ist eine Möglichkeit, Variablen zwischen den Wiederholungen der einzelnen Benutzersitzungen gemeinsam zu nutzen. Neben der Möglichkeit, den Zustand zu speichern und beizubehalten, bietet Streamlit auch die Möglichkeit, den Zustand mithilfe von Callbacks zu manipulieren.
 
 In diesem Tutorial werden wir die Verwendung von Session-State und Callbacks zeigen, während wir eine App zur Gewichtsumwandlung erstellen.
 

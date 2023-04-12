@@ -3,7 +3,7 @@
 In diesem Tutorial werden wir die folgenden Befehle verwenden, um unsere Streamlit-App zu gestalten:
 - `st.set_page_config(layout="wide")` - Zeigt den Inhalt der App im Wide-Modus an (sonst wird der Inhalt standardmäßig in einer Box mit festgelegter Breite umschlossen).
 - `st.sidebar` - Platziert die Widgets oder Text-/Bildanzeigen in der Seitenleiste.
-- `st.expander` - Platziert Text-/Bildanzeigen in einer [[aufklappbaren?]] Containerbox.
+- `st.expander` - Platziert Text-/Bildanzeigen in einer ausklappbaren Containerbox.
 - `st.columns` - Erstellt einen tabellarischen Bereich (oder Spalte), in dem Inhalte platziert werden können.
 
 ## Demo App
@@ -67,7 +67,7 @@ Als nächstes geben wir der Streamlit-App einen Titel.
 st.title('How to layout your Streamlit app')
 ```
 
-Unter dem Titel der App befindet sich ein [[aufklappbarer Feld]] mit der Überschrift `About this app`. Nach [[der Vergrößerung]] werden zusätzliche Details angezeigt.
+Unter dem Titel der App befindet sich ein aufklappbares Feld mit der Überschrift `About this app`. Nach der Vergrößerung werden zusätzliche Details angezeigt.
 
 ```python
 with st.expander('About this app'):

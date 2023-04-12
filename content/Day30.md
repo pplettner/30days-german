@@ -6,7 +6,7 @@ In diesem Tutorial werden wir unser neu erworbenes Wissen aus dieser Herausforde
 
 ## Real existierendes Problem
 
-Als [[Content-Ersteller/Creator?]] ist der Abruf von Vorschaubildern (Thumbnails) der YouTube-Videos eine nützliche Ressource für die soziale Werbung und die [[Erstellung von Content]].
+Als Content-Ersteller ist der Abruf von Vorschaubildern (Thumbnails) der YouTube-Videos eine nützliche Ressource für die soziale Werbung und die Erstellung von Content.
 
 Lass es uns herausfinden, wie wir dieses Problem angehen und eine Streamlit-App bauen können.
 
@@ -76,7 +76,7 @@ Als nächstes zeigen wir der Titel der App und die dazugehörige Überschrift an
 st.title('🖼️ yt-img-app')
 st.header('YouTube Thumbnail Image Extractor App')
 ```
-Wo wir gerade dabei sind, können wir auch gleich eine [[appklarbare]] Box einbauen.
+Wo wir gerade dabei sind, können wir auch gleich eine aufklappbare Box einbauen.
 ```python
 with st.expander('About this app'):
   st.write('This app retrieves the thumbnail image from a YouTube video.')
