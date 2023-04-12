@@ -76,7 +76,7 @@ Als nächstes zeigen wir der Titel der App und die dazugehörige Überschrift an
 st.title('🖼️ yt-img-app')
 st.header('YouTube Thumbnail Image Extractor App')
 ```
-Wo wir gerade dabei sind, können wir auch gleich eine aufklappbare Box einbauen.
+Wo wir gerade dabei sind, können wir auch gleich eine ausklappbare Box einbauen.
 ```python
 with st.expander('About this app'):
   st.write('This app retrieves the thumbnail image from a YouTube video.')

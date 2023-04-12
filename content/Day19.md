@@ -67,7 +67,7 @@ Als nächstes geben wir der Streamlit-App einen Titel.
 st.title('How to layout your Streamlit app')
 ```
 
-Unter dem Titel der App befindet sich ein aufklappbares Feld mit der Überschrift `About this app`. Nach der Vergrößerung werden zusätzliche Details angezeigt.
+Unter dem Titel der App befindet sich ein ausklappbares Feld mit der Überschrift `About this app`. Nach der Vergrößerung werden zusätzliche Details angezeigt.
 
 ```python
 with st.expander('About this app'):
