@@ -3,7 +3,7 @@
 Die Bored API-App schlägt dir lustige Dinge vor, wenn dir langweilig ist!
 
 Eigentlich demonstriert es auch die Verwendung von APIs innerhalb einer Streamlit-App.
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/bored-api-app/)
 
@@ -43,7 +43,7 @@ with col3:
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 import requests

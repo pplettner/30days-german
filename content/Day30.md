@@ -24,7 +24,7 @@ Kurzgesagt, hier sind die 3 einfachen Schritte, die wir mit der Streamlit-App du
 
 Um die Streamlit-App zu verwenden, kopiere eine YouTube-URL und füge sie in das Textfeld ein.
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/yt-img-app/)
 
@@ -66,7 +66,7 @@ else:
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 ```
@@ -105,7 +105,7 @@ def get_ytid(input_url):
   return ytid
 ```
 
-Zuletzt verwenden wir Verzweigung, um zu bestimmen, ob die [[Eingabeprompt]] der URL angezeigt werden soll (d.h. wie in der `else`-Anweisung) oder ob das YouTube-Thumbnail-Bild angezeigt werden soll (d.h. wie in der `if`-Anweisung).
+Zuletzt verwenden wir Verzweigung, um zu bestimmen, ob die Eingabeaufforderung der URL angezeigt werden soll (d.h. wie in der `else`-Anweisung) oder ob das YouTube-Thumbnail-Bild angezeigt werden soll (d.h. wie in der `if`-Anweisung).
 ```python
 # Display YouTube thumbnail image
 if yt_url != '':

@@ -4,16 +4,16 @@
 
 Streamlit bietet einen Caching-Mechanismus, der es deiner App ermöglicht, beim Laden von Daten aus dem Web, bei der Bearbeitung großer Datensätze oder bei rechenintensiven Anwendungen performant zu bleiben. Dies wird mit dem Dekorator `@st.cache` erreicht.
 
-Wenn Sie eine Funktion mit dem @st.cache-Dekorator markieren, wird es mit Streamlit mitgeteilt, dass es bei jedem Aufruf der Funktion einige Dinge überprüfen muss:
+Wenn du eine Funktion mit dem @st.cache-Dekorator markieren, wird es mit Streamlit mitgeteilt, dass es bei jedem Aufruf der Funktion einige Dinge überprüfen muss:
 
 1. Die Eingabeparameter, mit denen die Funktion aufgerufen wurde
 2. Der Wert einer externen Variable, die in der Funktion verwendet wird
 3. Der Funktionsrumpf
-4. Jeder Funktionsrumpf, der innerhalb der [[gecachten]] Funktion verwendet wird
+4. Jeder Funktionsrumpf, der innerhalb der gecachten Funktion verwendet wird
 
-Wenn Streamlit diese vier Komponenten zum ersten Mal mit genau diesen Werten und in genau dieser Kombination und Reihenfolge gesehen hat, führt es die Funktion aus und speichert das Ergebnis in einem lokalen Cache. Wenn sich dann beim nächsten Aufruf der [[gecachten]] Funktion keine dieser Komponenten geändert hat, überspringt Streamlit die Ausführung der Funktion ganz und gibt stattdessen die zuvor im Cache gespeicherte Ausgabe zurück.
+Wenn Streamlit diese vier Komponenten zum ersten Mal mit genau diesen Werten und in genau dieser Kombination und Reihenfolge gesehen hat, führt es die Funktion aus und speichert das Ergebnis in einem lokalen Cache. Wenn sich dann beim nächsten Aufruf der gecachten Funktion keine dieser Komponenten geändert hat, überspringt Streamlit die Ausführung der Funktion ganz und gibt stattdessen die zuvor im Cache gespeicherte Ausgabe zurück.
 
-Streamlit verfolgt die Änderungen in den Komponenten durch Hashing. Stell dir den Cache als einen [[In-Memory Key-Value-Store]] vor, bei dem der Schlüssel [[Key?]] ein Hash aller oben genannten Komponenten und der Wert das Ausgabeobjekt ist, das als Referenz übergeben wird.
+Streamlit verfolgt die Änderungen in den Komponenten durch Hashing. Stell dir den Cache als einen In-Memory Key-Value-Store vor, bei dem der Schlüssel ein Hash aller oben genannten Komponenten und der Wert das Ausgabeobjekt ist, das als Referenz übergeben wird.
 
 Schließlich unterstützt `@st.cache` Argumente, um das Verhalten des Caches zu konfigurieren. Weitere Informationen dazu findet man in unserer API-Referenz.
 
@@ -21,7 +21,7 @@ Schließlich unterstützt `@st.cache` Argumente, um das Verhalten des Caches zu 
 
 Man kann einfach den Dekorator `st.cache` in die vorangehende Zeile einer Funktion einfügen, die du in deiner Streamlit-App definierst. Siehe das Beispiel unten.
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.cache/)
 
@@ -69,7 +69,7 @@ st.info(b1-b0)
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 import numpy as np

@@ -14,7 +14,7 @@ Ablauf der App:
 1. Erstellen eines `Pandas` DataFrame mit `NumPy` generierten Zufallszahlen.
 2. Erstellen und Anzeigen des Liniendiagramms mit dem Befehl `st.line_chart()`.
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.line_chart/)
 
@@ -36,7 +36,7 @@ st.line_chart(chart_data)
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 import pandas as pd

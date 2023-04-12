@@ -2,7 +2,7 @@
 
 `st.multiselect` zeigt ein Mehrfachauswahl- bzw. Multiselect-Widget an.
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.multiselect/)
 
@@ -22,7 +22,7 @@ st.write('You selected:', options)
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 ```
@@ -32,7 +32,7 @@ Dies wird gefolgt von dem Erstellen einer Überschrift für die App:
 st.header('st.multiselect')
 ```
 
-Als Nächstes, werden wir das Widget `st.multiselect` verwenden, um Eingaben zu akzeptieren, bei denen die Benutzer eine oder mehrere Farben auswählen können.
+Als nächstes, werden wir das Widget `st.multiselect` verwenden, um Eingaben zu akzeptieren, bei denen die Benutzer eine oder mehrere Farben auswählen können.
 
 ```python
 options = st.multiselect(

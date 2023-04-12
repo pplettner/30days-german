@@ -12,7 +12,7 @@ Ablauf der App:
 1. Der Benutzer wählt einen Wert aus durch Einstellen des Sliders.
 2. Die App zeigt den ausgewählten Wert an.
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.slider/)
 
@@ -64,7 +64,7 @@ st.write("Start time:", start_time)
 ```
 
 ## Zeilenweise Erklärung 
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` zu importieren:
 ```python
 import streamlit as st
 from datetime import time, datetime

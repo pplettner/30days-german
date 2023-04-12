@@ -4,23 +4,23 @@ Komponenten sind Python-Module von Drittanbietern, die die Möglichkeiten von St
 
 ## Welche Streamlit-Komponenten gibt es?
 
-Es gibt mehrere Streamlit-Komponenten, die auf der Streamlit-Website [[2](https://streamlit.io/components)] gezeigt werden.
+Es gibt mehrere Streamlit-Komponenten, die auf der Streamlit-Website [[2](https://streamlit.io/components)] vorgestellt werden.
 
-Fanilo (ein Streamlit-Entwickler) hat eine erstaunliche Liste von Streamlit-Komponenten in einem Wiki-Beitrag [[3](https://discuss.streamlit.io/t/streamlit-components-community-tracker/4634)] zusammengestellt, die ab April 2022 etwa 85 Streamlit Komponenten auflistet.
+Fanilo (ein Streamlit-Entwickler) hat eine erstaunliche Liste von Streamlit-Komponenten in einem Wiki-Beitrag [[3](https://discuss.streamlit.io/t/streamlit-components-community-tracker/4634)] zusammengestellt, die seit April 2022 etwa 85 Streamlit Komponenten auflistet.
 
 ## Wie wird es verwendet?
 
-Streamlit-Komponenten brauchen nur eine einfache Pip-Installation.
+Streamlit-Komponenten brauchen nur eine einfache pip-Installation.
 
 In diesem Tutorial zeigen wir dir, wie man die Komponente `streamlit_pandas_profiling` verwenden kann [[4](https://share.streamlit.io/okld/streamlit-gallery/main?p=pandas-profiling)].
 
-#### Komponent installieren
+#### Komponente installieren
 
 ```bash
 pip install streamlit_pandas_profiling
 ```
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-components/)
 
@@ -41,7 +41,7 @@ st_profile_report(pr)
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 import pandas as pd
@@ -54,7 +54,7 @@ Dies wird gefolgt von dem Erstellen einer Überschrift für die App:
 st.header('`streamlit_pandas_profiling`')
 ```
 
-Als Nächstes, laden wir den Penguins-Datensatz mit dem Befehl `read_csv` von `pandas`.
+Als nächstes laden wir den Penguins-Datensatz mit dem Befehl `read_csv` von `pandas`.
 ```python
 df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
 ```
@@ -67,13 +67,13 @@ st_profile_report(pr)
 
 ## Eigene Komponenten erstellen
 
-Wenn du daran interessiert bist, deine eigene Komponente zu erstellen, lies die folgenden Ressourcen:
+Wenn du daran interessiert bist, deine eigene Komponente zu erstellen, schau dir die folgenden Ressourcen an:
 - [Create a Component](https://docs.streamlit.io/library/components/create)
 - [Publish a Component](https://docs.streamlit.io/library/components/publish)
 - [Components API](https://docs.streamlit.io/library/components/components-api)
 - [Blog post on Components](https://blog.streamlit.io/introducing-streamlit-components/)
 
-Wenn du lieber mit Videos lernen möchten, hat unser Ingenieur Tim Conkling ein paar tolle Tutorials zusammengestellt:
+Wenn du lieber mit Videos lernen möchten, hat unser Entwickler Tim Conkling ein paar tolle Tutorials zusammengestellt:
 - [How to build a Streamlit component | Part 1: Setup and Architecture](https://youtu.be/BuD3gILJW-Q)
 - [How to build a Streamlit component | Part 2: Part 2: Make a Slider Widget](https://youtu.be/QjccJl_7Jco)
 

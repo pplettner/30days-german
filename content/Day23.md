@@ -48,7 +48,7 @@ st.write(f'Hello **{firstname} {surname}**, how are you?')
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 ```
@@ -77,7 +77,7 @@ such that it becomes
 ''')
 ```
 
-Anschließend zeigen wir der Inhalt des Befehls `st.experimental_get_query_params` an.
+Anschließend zeigen wir den Inhalt des Befehls `st.experimental_get_query_params` an.
 ```python
 # 2. Contents of st.experimental_get_query_params
 st.header('2. Contents of st.experimental_get_query_params')

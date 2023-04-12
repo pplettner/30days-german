@@ -7,7 +7,7 @@ Wir können das Thema anpassen, indem wir die Parameter in der Konfigurationsdat
 
 Eine einfache App, die das Ergebnis unserer Themenanpassung zeigt. Dies wird durch die Anpassung des HTML-HEX-Codes in der Datei [`.streamlit/config.toml`](https://github.com/dataprofessor/streamlit-custom-theme/blob/master/.streamlit/config.toml) ermöglicht.
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-custom-theme/)
 
@@ -44,7 +44,7 @@ font="monospace"
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 ```
@@ -73,13 +73,6 @@ Zuletzt erstellen wir ein Slider-Widget in der Seitenleiste und zeigen die ausge
 number = st.sidebar.slider('Select a number:', 0, 10, 5)
 st.write('Selected number from slider widget is:', number)
 ```
-
-Schauen wir uns the custom colors that we've used in this app, which is specified in the `.streamlit/config.toml` file:
-- `primaryColor="#F39C12"` - This sets the primary color to orange. Notice the orange colors in the slider widget.
-- `backgroundColor="#2E86C1"` - This sets the background color to blue. Notice the main panel has a blue background color.
-- `secondaryBackgroundColor="#AED6F1"` - This sets the secondary background color to dark gray. Notice the gray background color of the sidebar and the background color of the code box in the main panel.
-- `textColor="#FFFFFF"` - The text color is set to white.
-- `font="monospace"` - This sets the font to monospace.
 
 Schauen wir uns auf die individuelle Farben, die wir in dieser App verwendet haben und die in der Datei `.streamlit/config.toml` angegeben sind:
 - `primaryColor="#F39C12"` - Damit wird die Primärfarbe auf Orange eingestellt. Siehe die orangen Farben im Slider-Widget.

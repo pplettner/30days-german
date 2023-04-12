@@ -17,7 +17,7 @@ st.write(st.secrets['message'])
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 ```
@@ -27,14 +27,14 @@ Dies wird gefolgt von dem Erstellen eines Titels für die App:
 st.title('st.secrets')
 ```
 
-Zuletzt, zeigen wir die gespeicherten Geheimdaten an:
+Zuletzt zeigen wir die gespeicherten Geheimdaten an:
 ```python
 st.write(st.secrets['message'])
 ```
 
 Es ist zu beachten, dass Geheimdaten in der Streamlit Community Cloud gespeichert werden können, wie in den Screenshots unten gezeigt.
 
-Wenn man lokal arbeitet, können Daten in `.streamlit/secrets.toml` gespeichert werden. Achte darauf, dass du diese Datei nicht in ein GitHub-Repo hochladest, wenn die App bereitgestellt wird.
+Wenn man lokal arbeitet, können Daten in `.streamlit/secrets.toml` gespeichert werden. Achte darauf, dass du diese Datei nicht in ein GitHub-Repo hochlädst, wenn die App bereitgestellt wird.
 
 ## Literaturhinweise
 - [Add secrets to your Streamlit apps](https://blog.streamlit.io/secrets-in-sharing-apps/)

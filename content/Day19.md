@@ -6,12 +6,12 @@ In diesem Tutorial werden wir die folgenden Befehle verwenden, um unsere Streaml
 - `st.expander` - Platziert Text-/Bildanzeigen in einer [[aufklappbaren?]] Containerbox.
 - `st.columns` - Erstellt einen tabellarischen Bereich (oder Spalte), in dem Inhalte platziert werden können.
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-layout/)
 
 ## Code
-So kann man das Layout deiner Streamlit-App anpassen können:
+So kannst du das Layout deiner Streamlit-App anpassen können:
 ```python
 import streamlit as st
 
@@ -52,17 +52,17 @@ with col3:
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 ```
 
-Zuerst legen wir das Seitenlayout fest, dass es im `wide` Modus angezeigt wird. Dabei kann sich der Seiteninhalt auf die Breite des Browsers ausdehnen.
+Zuerst legen wir das Seitenlayout fest, welches im `wide` Modus angezeigt wird. Dabei kann sich der Seiteninhalt auf die Breite des Browsers ausdehnen.
 ```python
 st.set_page_config(layout="wide")
 ```
 
-Als nächstes geben wir die Streamlit-App einen Titel.
+Als nächstes geben wir der Streamlit-App einen Titel.
 ```python
 st.title('How to layout your Streamlit app')
 ```

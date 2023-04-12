@@ -10,8 +10,8 @@ Ablauf der App:
 1. Der Benutzer wählt eine Farbe aus
 2. Die App zeigt die ausgewählte Farbe an
 
-## Demo app
-Die eingesetze Streamlit App sollte aussehen, wie die im folgenden Link:
+## Demo App
+Die eingesetze Streamlit App sollte wie die im folgenden Link aussehen:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.selectbox/)
 
@@ -30,7 +30,7 @@ st.write('Your favorite color is ', option)
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 ```
@@ -40,7 +40,7 @@ Dies wird gefolgt von dem Erstellen einer Überschrift für die App:
 st.header('st.selectbox')
 ```
 
-Als Nächstes erstellen wir eine Variable namens `option`, die Benutzereingaben in Form eines **select** Eingabe Widgets über den Befehl "st.selectbox()" akzeptiert.
+Als nächstes erstellen wir eine Variable namens `option`, die Benutzereingaben in Form eines **select** Eingabe Widgets über den Befehl `st.selectbox()` akzeptiert.
 
 ```python
 option = st.selectbox(
@@ -57,7 +57,7 @@ st.write('Your favorite color is ', option)
 ```
 
 ## Nächste Schritte
-Jetzt, da die Streamlit App lokal erstellt ist, kann man nun in [Streamlit Community Cloud](https://streamlit.io/cloud) bereitstellen.
+Jetzt, da die Streamlit App lokal erstellt ist, können wir sie auf [Streamlit Community Cloud](https://streamlit.io/cloud) bereitstellen.
 
 ## Referenzen 
 Mehr über [`st.selectbox`](https://docs.streamlit.io/library/api-reference/widgets/st.selectbox)

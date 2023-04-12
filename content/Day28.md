@@ -4,7 +4,7 @@
 
 Die Bibliothek wird von unserem internen Mitarbeiter [Snehan Kekre](https://github.com/snehankekre) entwickelt, der auch die Website [Streamlit Documentation](https://docs.streamlit.io/) pflegt.
 
-Zuerst muss man Streamlit installieren (natürlich!) und dann die Bibliothek `streamlit-shap` mit Pip:
+Zuerst muss man Streamlit installieren (natürlich!) und dann die Bibliothek `streamlit-shap` mit pip:
 ```bash
 pip install streamlit
 pip install streamlit-shap
@@ -12,7 +12,7 @@ pip install streamlit-shap
 
 Es gibt noch weitere Bibliotheken zu installieren (z.B. `matplotlib`, `pandas`, `scikit-learn` und `xgboost`), falls du dies noch nicht getan hast.
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/streamlit-shap/)
 
@@ -92,7 +92,7 @@ with st.expander('Force plot'):
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 from streamlit_shap import st_shap
@@ -139,8 +139,7 @@ Dann wird der Titel der Streamlit-App angezeigt:
 st.title("`streamlit-shap` for displaying SHAP plots in a Streamlit app")
 ```
 
-An about expander box is implemented to provide details of the app:
-Eine [[About Expanderfeld?]] ist implementiert, um Details über die App bereitzustellen:
+Ein "Über" Ausklappfeld ist implementiert, um Details über die App bereitzustellen:
 ```python
 with st.expander('About the app'):
     st.markdown('''[`streamlit-shap`](https://github.com/snehankekre/streamlit-shap) is a Streamlit component that provides a wrapper to display [SHAP](https://github.com/slundberg/shap) plots in [Streamlit](https://streamlit.io/). 
@@ -148,7 +147,7 @@ with st.expander('About the app'):
                 ''')
 ```
 
-Hier wird die Überschrift zusammen mit einem [[Expanderfeld]] für die Eingabevariablen "X" und "y" angezeigt:
+Hier wird die Überschrift zusammen mit einem Ausklappfeld für die Eingabevariablen "X" und "y" angezeigt:
 ```python
 st.header('Input data')
 X,y = load_data()

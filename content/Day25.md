@@ -1,6 +1,6 @@
 # st.session_state
 
-Wir definieren den Zugriff auf eine Streamlit-App in einer Browser-Tab als eine Session (Sitzung). Für jede Browser-Tab, die sich mit dem Streamlit-Server verbindet, wird eine neue Sitzung erstellt. Streamlit führt dein Skript von vorne bis hinten aus jedes Mal, wenn du mit deiner App interagierst. Jede Wiederholung findet in einer leeren Umgebung statt: Es werden keine gemeinsamen Variablen zwischen den Durchläufen benutzt.
+Wir definieren den Zugriff auf eine Streamlit-App in einer Browser-Tab als eine Session (Sitzung). Für jeden Browser-Tab, die sich mit dem Streamlit-Server verbindet, wird eine neue Sitzung erstellt. Streamlit führt dein Skript von vorne bis hinten aus jedes Mal, wenn du mit deiner App interagierst. Jede Wiederholung findet in einer leeren Umgebung statt: Es werden keine gemeinsamen Variablen zwischen den Durchläufen benutzt.
 
 Der Session-State ([[Sitzungsstatus/Sitzungszustand]]) ist eine Möglichkeit, Variablen zwischen den Wiederholungen der einzelnen Benutzersitzungen gemeinsam zu nutzen. Neben der Möglichkeit, den Zustand zu speichern und beizubehalten, bietet Streamlit auch die Möglichkeit, den Zustand mithilfe von Callbacks zu manipulieren.
 
@@ -8,7 +8,7 @@ In diesem Tutorial werden wir die Verwendung von Session-State und Callbacks zei
 
 `st.session_state` ermöglicht die Implementierung des Sessionsstatus in einer Streamlit-App.
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.session_state/)
 
@@ -36,7 +36,7 @@ st.write("st.session_state object:", st.session_state)
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 ```
@@ -63,15 +63,10 @@ with col1:
 with col2:
   kilogram = st.number_input("Kilograms:", key = "kg", on_change = kg_to_lbs)
 ```
-The above 2 custom functions will be called upon as soon as a numerical value is entered into the number box created using the `st.number_input` command. Notice how the `on_change` option specifies the 2 custom functions `lbs_to_kg` and `kg_to_lbs`). 
-
-In a nutshell, upon entering a number into the `st.number_input` box the number is converted by these custom functions.
-
-Finally, the weight values in `kg` and `lbs` units as stored in the session state as `st.session_state.kg` and `st.session_state.lbs` will be printed out via `st.write`:
 
 Die obigen 2 definierten Funktionen werden aufgerufen, sobald ein numerischer Wert in das Zahlenfeld eingegeben wird, das durch den Befehl `st.number_input` erstellt wurde. Es ist zu bemerken, dass die Option `on_change` die beiden Funktionen (`lbs_to_kg` und `kg_to_lbs`) festlegt. 
 
-Kurzgesagt, bei der Eingabe einer Zahl in das Feld `st.number_input` wird die Zahl durch diese Funktionen umgewandelt.
+Kurz gesagt wird die Zahl durch diese Funktionen bei der Eingabe einer Zahl in das Feld `st.number_input` umgewandelt.
 
 Zuletzt werden die Gewichtswerte in den Einheiten `kg` und `lbs` mit `st.write` ausgedruckt, die im Session-State als `st.session_state.kg` und `st.session_state.lbs` gespeichert sind:
 

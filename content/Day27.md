@@ -28,11 +28,11 @@ Das Ziel der heutigen Herausforderung ist es, ein Dashboard zu erstellen, das au
 
 Man kann die von der Nivo Bump-Demo generierten Daten auf dem "Daten"-Tab verwenden: https://nivo.rocks/bump/.
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/okld/streamlit-elements-demo/main)
 
-## Code mit zeilenweise Erklärung
+## Code mit zeilenweiser Erklärung
 
 ```python
 # Zuerst brauchen wir die folgenden Importe für unsere App.
@@ -46,7 +46,7 @@ from pathlib import Path
 
 from streamlit_elements import elements, dashboard, mui, editor, media, lazy, sync, nivo
 
-# Seitenlayout ändern, damit das Dashboard die ganze Seite [[einnimmt]].
+# Seitenlayout ändern, damit das Dashboard die ganze Seite einnimmt.
 
 st.set_page_config(layout="wide")
 
@@ -62,7 +62,7 @@ with st.sidebar:
 # Standarddaten initialisieren für den Code-Editor und das Diagramm.
 #
 # Für dieses Tutorial brauchen wir Daten für ein Nivo Bump-Diagramm.
-# Zufallsdaten erhalten Sie dort, im Tab 'Daten': https://nivo.rocks/bump/
+# Zufallsdaten erhälst du dort, im Tab 'Daten': https://nivo.rocks/bump/
 #
 # Wie man unten sieht wird dieser Session-State aktualisiert, wenn der
 # Code-Editor geändert wird, und es wird von Nivo Bump Chart gelesen werden, um die Daten zu zeichnen.
@@ -135,20 +135,20 @@ with elements("demo"):
                 # Diese Funktion wird jedes Mal aufgerufen, wenn eine Änderung vorgenommen wird, und der aktualisierte Inhaltswert wird in
                 # den ersten Parameter übergeben (vgl. onChange: https://github.com/suren-atoyan/monaco-react#props)
                 #
-                # Streamlit Elemente bietet eine spezielle sync()-Funktion. Diese Funktion erstellt einen Callback, der
+                # Streamlit Elemente bieten eine spezielle sync()-Funktion. Diese Funktion erstellt einen Callback, der
                 # Parameter automatisch an die Session-State von Streamlit weiterleitet.
                 #
                 # Beispiele
                 # --------
-                # Ein Callback erstellen, der seinen ersten Parameter an ein Session-State-Element namens "data" weiterleitet:
+                # Erstelle einen Callback, der seinen ersten Parameter an ein Session-State-Element namens "data" weiterleitet:
                 # >>> editor.Monaco(onChange=sync("data"))
                 # >>> print(st.session_state.data)
                 #
-                # Ein Callback erstellen, der seinen zweiten Parameter an ein Session-State-Element namens "ev" weiterleitet:
+                # Erstelle einen Callback, der seinen zweiten Parameter an ein Session-State-Element namens "ev" weiterleitet:
                 # >>> editor.Monaco(onChange=sync(None, "ev"))
                 # >>> print(st.session_state.ev)
                 #
-                # Ein Callback erstellen, der seine beiden Parameter an die Session-State weiterleitet:
+                # Erstelle einen Callback, der seine beiden Parameter an die Session-State weiterleitet:
                 # >>> editor.Monaco(onChange=sync("data", "ev"))
                 # >>> print(st.session_state.data)
                 # >>> print(st.session_state.ev)
@@ -172,7 +172,7 @@ with elements("demo"):
 
             with mui.CardActions:
 
-                # Monaco-Editor hat einen Lazy-Callback, der an onChange gebunden ist. Das bedeutet, dass selbst wenn man den
+                # Der Monaco-Editor hat einen Lazy-Callback, der an onChange gebunden ist. Das bedeutet, dass selbst wenn man den
                 # Inhalt von Monaco ändert, wird Streamlit nicht direkt benachrichtigt, also wird es nicht jedes Mal neu geladen.
                 # Wir brauchen also ein anderes, nicht-lazy Ereignis, um ein Update auszulösen.
                 #
@@ -180,7 +180,7 @@ with elements("demo"):
                 # [[Unser Callback muss nicht was Besonderes tun.]] Sie können entweder eine leere
                 # Python-Funktion erstellen, oder sync() ohne Argument verwenden.
                 #
-                # Jetzt jedes Mal, wenn Sie auf den Button klicken, wird der onClick-Callback ausgelöst. Aber jeder andere
+                # Jetzt jedes Mal, wenn du auf den Button klickst, wird der onClick-Callback ausgelöst. Aber jeder andere
                 # Lazy-Callback, der sich in der Zwischenzeit geändert hat, wird ebenfalls aufgerufen.
 
                 mui.Button("Apply changes", onClick=sync())

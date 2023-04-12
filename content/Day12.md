@@ -2,7 +2,7 @@
 
 `st.checkbox` zeigt ein Kontrollkästchen- bzw. Checkbox-Widget an.
 
-## Demo app
+## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.checkbox/)
 
@@ -30,7 +30,7 @@ if cola:
 ```
 
 ## Zeilenweise Erklärung
-Die allerste Sache zum Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
+Der erste Schritt für das Erstellen einer Streamlit App ist es, die `streamlit` Bibliothek als `st` sowie andere Bibliotheken zu importieren:
 ```python
 import streamlit as st
 ```
@@ -40,7 +40,7 @@ Dies wird gefolgt von dem Erstellen einer Überschrift für die App:
 st.header('st.checkbox')
 ```
 
-Als Nächstes, werden wir eine Frage mit `st.write` stellen:
+Als nächstes werden wir eine Frage mit `st.write` stellen:
 ```python
 st.write ('What would you like to order?')
 ```
